@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'aplicacion/css/bootstrap.min.css' %}" rel="stylesheet" />
+
+
+    <script src="{% static 'aplicacion/js/bootstrap.bundle.min.js' %}"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let url = 'https://api.victorsanmartin.com/feriados/en.json'
+        fetch(url)
+            .then(Response => Response.json())
+            .then(data => console.log(data))
+            .catch(error => console.log(error))
+    </script>
+
+</body>
+</html>
