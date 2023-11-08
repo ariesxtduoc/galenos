@@ -122,3 +122,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+from decouple import config
+
+EMAIL_HOST = 'mati.morab@duocuc.cl'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'maticky777@gmail.com'
+EMAIL_HOST_PASSWORD = 'Macky123456789'
+EMAIL_USE_TLS = True
